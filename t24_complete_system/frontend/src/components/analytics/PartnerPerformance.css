@@ -1,0 +1,147 @@
+.partner-performance {
+  width: 100%;
+}
+
+.partner-performance-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.partner-performance-header h2 {
+  margin: 0;
+}
+
+.partner-performance-controls {
+  display: flex;
+  gap: 16px;
+}
+
+.partner-performance-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.partner-performance-top {
+  margin-bottom: 24px;
+}
+
+.top-partner-card {
+  height: 100%;
+}
+
+.top-partner-card.gold {
+  border-top: 3px solid #FFD700;
+}
+
+.top-partner-card.silver {
+  border-top: 3px solid #C0C0C0;
+}
+
+.top-partner-card.bronze {
+  border-top: 3px solid #CD7F32;
+}
+
+.top-partner {
+  padding: 8px 0;
+}
+
+.top-partner-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.top-partner-region {
+  color: #8c8c8c;
+  margin-bottom: 16px;
+}
+
+.top-partner-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.top-partner-stat {
+  text-align: center;
+}
+
+.stat-label {
+  color: #8c8c8c;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.stat-value {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.top-partner-performance {
+  margin-top: 8px;
+}
+
+.chart-card {
+  height: 100%;
+}
+
+.table-card {
+  height: 100%;
+}
+
+.chart-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
+.chart-placeholder-text {
+  text-align: center;
+  color: #8c8c8c;
+}
+
+.chart-placeholder-text .anticon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.chart-placeholder-note {
+  font-size: 12px;
+  max-width: 300px;
+  margin: 8px auto 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .partner-performance-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .chart-placeholder {
+    height: 200px;
+  }
+  
+  .top-partner-stats {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .top-partner-stat {
+    text-align: left;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 577px) {
+  .chart-placeholder {
+    height: 220px;
+  }
+}

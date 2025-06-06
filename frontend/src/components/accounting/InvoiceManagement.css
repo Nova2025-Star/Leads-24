@@ -1,0 +1,92 @@
+.invoice-management {
+  width: 100%;
+}
+
+.invoice-management-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.invoice-card {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.invoice-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.bulk-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.invoice-summary {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.summary-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.summary-item .amount {
+  color: #1890ff;
+  font-size: 18px;
+}
+
+.summary-item .overdue {
+  color: #f5222d;
+  font-size: 18px;
+}
+
+.create-invoice-form {
+  margin-top: 16px;
+}
+
+.form-item {
+  margin-bottom: 16px;
+}
+
+.form-item label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.form-item input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+}
+
+.form-description {
+  margin-top: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .invoice-actions {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .bulk-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .summary-item {
+    margin-bottom: 16px;
+  }
+}

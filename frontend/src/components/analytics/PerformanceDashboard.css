@@ -1,0 +1,170 @@
+.performance-dashboard {
+  width: 100%;
+}
+
+.performance-dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.performance-dashboard-header h2 {
+  margin: 0;
+}
+
+.performance-dashboard-controls {
+  display: flex;
+  gap: 16px;
+}
+
+.performance-dashboard-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.performance-dashboard-metrics {
+  margin-bottom: 24px;
+}
+
+.metric-card {
+  height: 100%;
+}
+
+.metric-card.leads {
+  border-top: 3px solid #1890ff;
+}
+
+.metric-card.conversion {
+  border-top: 3px solid #52c41a;
+}
+
+.metric-card.revenue {
+  border-top: 3px solid #722ed1;
+}
+
+.metric-card.average {
+  border-top: 3px solid #fa8c16;
+}
+
+.metric-change {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.metric-change .positive {
+  color: #52c41a;
+}
+
+.metric-change .negative {
+  color: #f5222d;
+}
+
+.metric-change .period {
+  color: #8c8c8c;
+  margin-left: 8px;
+}
+
+.chart-card {
+  height: 100%;
+}
+
+.chart-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
+.chart-placeholder-text {
+  text-align: center;
+  color: #8c8c8c;
+}
+
+.chart-placeholder-text .anticon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.chart-placeholder-note {
+  font-size: 12px;
+  max-width: 300px;
+  margin: 8px auto 0;
+}
+
+.chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 16px;
+  gap: 12px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.legend-color {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  margin-right: 8px;
+}
+
+.legend-color.new {
+  background-color: #1890ff;
+}
+
+.legend-color.assigned {
+  background-color: #faad14;
+}
+
+.legend-color.quoted {
+  background-color: #722ed1;
+}
+
+.legend-color.approved {
+  background-color: #52c41a;
+}
+
+.legend-color.declined {
+  background-color: #f5222d;
+}
+
+.legend-color.expired {
+  background-color: #8c8c8c;
+}
+
+.legend-color.draft {
+  background-color: #8c8c8c;
+}
+
+.legend-color.sent {
+  background-color: #1890ff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .performance-dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .chart-legend {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 577px) {
+  .chart-legend {
+    justify-content: space-around;
+  }
+}

@@ -1,0 +1,82 @@
+.regional-analysis {
+  width: 100%;
+}
+
+.regional-analysis-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.regional-analysis-header h2 {
+  margin: 0;
+}
+
+.regional-analysis-controls {
+  display: flex;
+  gap: 16px;
+}
+
+.regional-analysis-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.regional-analysis-overview {
+  margin-bottom: 24px;
+}
+
+.chart-card {
+  height: 100%;
+}
+
+.table-card {
+  height: 100%;
+}
+
+.chart-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
+.chart-placeholder-text {
+  text-align: center;
+  color: #8c8c8c;
+}
+
+.chart-placeholder-text .anticon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.chart-placeholder-note {
+  font-size: 12px;
+  max-width: 300px;
+  margin: 8px auto 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .regional-analysis-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .chart-placeholder {
+    height: 200px;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 577px) {
+  .chart-placeholder {
+    height: 220px;
+  }
+}

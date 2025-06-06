@@ -1,0 +1,61 @@
+.responsive-table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.responsive-table-controls {
+  display: flex;
+  margin-bottom: 16px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.responsive-table-search {
+  min-width: 200px;
+  max-width: 300px;
+  flex: 1;
+}
+
+.responsive-table-filter {
+  min-width: 150px;
+  max-width: 200px;
+}
+
+.responsive-table.mobile .ant-table-thead > tr > th,
+.responsive-table.mobile .ant-table-tbody > tr > td {
+  padding: 8px;
+  white-space: nowrap;
+}
+
+.responsive-table.tablet .ant-table-thead > tr > th,
+.responsive-table.tablet .ant-table-tbody > tr > td {
+  padding: 12px 8px;
+}
+
+.responsive-table .ant-table-pagination {
+  margin: 16px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .responsive-table-controls {
+    flex-direction: column;
+  }
+  
+  .responsive-table-search,
+  .responsive-table-filter {
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .responsive-table .ant-table-pagination {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 577px) {
+  .responsive-table-search {
+    flex: 2;
+  }
+}

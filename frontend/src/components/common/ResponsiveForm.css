@@ -1,0 +1,63 @@
+.responsive-form {
+  width: 100%;
+}
+
+.responsive-form-fields {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -8px;
+}
+
+.responsive-form-field {
+  padding: 0 8px;
+  box-sizing: border-box;
+}
+
+.responsive-form-buttons {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 24px;
+}
+
+.responsive-form-buttons .reset-button {
+  margin-left: 8px;
+}
+
+.responsive-form.mobile .ant-form-item-label {
+  padding-bottom: 4px;
+}
+
+.responsive-form.mobile .ant-form-item {
+  margin-bottom: 16px;
+}
+
+.responsive-form.mobile .responsive-form-buttons {
+  flex-direction: column;
+  width: 100%;
+}
+
+.responsive-form.mobile .responsive-form-buttons button {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.responsive-form.mobile .responsive-form-buttons .reset-button {
+  margin-left: 0;
+}
+
+.responsive-form.tablet .ant-form-item {
+  margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .responsive-form-field {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 577px) {
+  .responsive-form-buttons button {
+    padding: 0 15px;
+  }
+}
